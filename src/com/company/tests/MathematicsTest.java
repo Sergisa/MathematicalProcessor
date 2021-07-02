@@ -10,7 +10,7 @@ class MathematicsTest {
 
     @Test
     void factorial() {
-        Assertions.assertEquals(6, Mathematics.factorial(3), DELTA);
+        Assertions.assertEquals(6, Mathematics.factorial(3));
     }
 
     @Test
@@ -25,11 +25,17 @@ class MathematicsTest {
 
     @Test
     void power() {
-        Assertions.assertEquals(9, Mathematics.power(3,2), DELTA);
+        Assertions.assertEquals(9, Mathematics.power(3,2));
     }
 
     @Test
     void cos() {
         Assertions.assertEquals(0, Mathematics.cos(Math.toRadians(90)), DELTA);
+    }
+
+    @Test
+    void mean() {
+        double[] values = new double[]{1,2,3,4,5,6};
+        Assertions.assertEquals(3.5, Mathematics.mean(values));
     }
 }
