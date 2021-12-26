@@ -19,6 +19,7 @@ class MathematicsTest {
     @Test
     void sin() {
         Assertions.assertEquals(0, Mathematics.sin(Math.toRadians(0)), DELTA, "sin(0)");
+        Assertions.assertEquals((Math.sqrt(6) - Math.sqrt(2)) / 4, Mathematics.sin(Math.toRadians(15)), DELTA, "sin(15)");
         Assertions.assertEquals(0.5, Mathematics.sin(Math.toRadians(30)), DELTA, "sin(30)");
         Assertions.assertEquals(Math.sqrt(2) / 2, Mathematics.sin(Math.toRadians(45)), DELTA, "sin(45)");
         Assertions.assertEquals(Math.sqrt(3) / 2, Mathematics.sin(Math.toRadians(60)), DELTA, "sin(60)");
