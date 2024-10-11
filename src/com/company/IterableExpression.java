@@ -1,5 +1,5 @@
 package com.company;
 
 public interface IterableExpression {
-    double execute(int n);
+    double execute(int i);
 }
